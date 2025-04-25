@@ -93,10 +93,10 @@ export function UMKMGrid() {
                     >
                       {umkm.status}
                     </Badge>
-                    <div className="flex items-center">
+                    {/* <div className="flex items-center">
                       <Star className="h-4 w-4 text-yellow-400 mr-1" />
                       <span>{umkm.rating}</span>
-                    </div>
+                    </div> */}
                   </div>
                   <AnimatePresence>
                     {expandedId === umkm.id && (
@@ -113,7 +113,7 @@ export function UMKMGrid() {
                         </div>
                         <div className="flex items-center text-sm">
                           <Phone className="h-4 w-4 mr-2" />
-                          {umkm.phone}
+                          {umkm.phone_number}
                         </div>
                       </motion.div>
                     )}

@@ -189,6 +189,7 @@ export default function UMKMDetailPage() {
 
         imageUrl = uploadRes.data.imageUrl;
       }
+      
 
       const res = await axios.post(
         `${API_BASE_URL}/api/umkms/${params.id}/products`,
@@ -494,7 +495,7 @@ export default function UMKMDetailPage() {
                   <div>
                     <h3 className="font-semibold mb-2">Contact Information</h3>
                     <p>Email: {umkm.email || "N/A"}</p>
-                    <p>Phone: {umkm.phone || "N/A"}</p>
+                    <p>Phone: {umkm.phone_number || "N/A"}</p>
                     <p>Address: {umkm.address || "N/A"}</p>
                   </div>
                 </div>
